@@ -1,0 +1,174 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.6; 
+}
+
+header {
+  padding: 20px;
+  text-align: center;
+  background: #2c3e50;
+  color: #ffffff;
+}
+
+header h1 {
+    font-size : 24px;
+}
+
+nav {
+    padding: 15px;
+    text-align: center;
+    background: #16a085;
+    display : flex;
+    justify-content: center;
+    align-items : center;
+    flex-wrap : wrap;
+    gap : 10px;
+}
+
+nav a { 
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items : center;
+    flex-wrap: wrap;
+    padding : 10px;
+    gap : 1rem;
+
+}
+
+article {
+    width: 100%;
+    padding: 20px;
+    max-width: 700px;
+    margin: 15px auto;
+    background: #ffffff;
+    border-radius: 8px; 
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); 
+}
+
+article h2 {
+  color: #2c3e50;
+  font-size : 22px;
+}
+
+article ul { 
+  padding-left: 20px;
+ 
+}
+article a {
+   text-decoration: none;
+}
+
+.profile-photo {
+    display : flex;
+    max-width : 100%;
+    height : auto;
+    width : 350px;
+    margin : 0 auto 20px;
+    border-radius : 20px;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background: #2c3e50;
+  color: #ffffff;
+  font-size : 13px;
+}
+
+@media screen and (max-width: 575px) {
+    header {
+        padding : 20px 10px;
+    }
+
+    header h1 {
+        font-size : 24px;
+    }
+
+    header p {
+        font-size : 14px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap : 10px
+    }
+
+    .profile-container {
+        padding : 20px;
+    }
+
+    article {
+        padding : 20px;
+        margin : 15px auto;
+    }
+
+    article h2 {
+        font-size : 22px;
+    }
+
+    article p{
+        font-size : 14px
+    }
+
+    footer {
+        font-size : 13px;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width : 992px) {
+    
+    .profile-container {
+        padding : 25px;
+    }
+
+    header h1 {
+        font-size : 30px;
+    }
+
+    article {
+        max-width: 650px;
+        padding : 30px
+    }
+
+    article h2 {
+        font-size : 26px;
+    }
+
+    article p{
+        font-size : 14px
+    }
+
+    footer {
+        font-size : 13px;
+    }
+}
+
+@media screen and (min-width: 993px) {
+    .profile-container{
+        padding : 40px;
+    }
+
+    article {
+        max-width: 750px;
+        padding : 40px;
+    }
+
+    article h2 {
+        font-size : 30px;
+    }
+
+    article p {
+        font-size : 16px;
+    }
+
+    footer {
+        font-size : 16px;
+    }
+}
