@@ -1,0 +1,121 @@
+@import url("constants.css");
+
+body {
+    background-color: var(--gray-color);
+}
+
+.centering {
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-image: url("/Images/coffee beans-landscape-final.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 80%;
+    max-width: 1000px;
+    height: 120px;
+    margin: 0 auto;
+}
+
+.our-menu-text {
+    font-size: 60px;
+    user-select: none;
+    color: var(--gray-color);
+    font-family: fantasy;
+    margin: 0;
+}
+
+.menu-content-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+@media screen and (min-width: 993px) {
+    .menu-content-layout {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .menu-navigation {
+        width: 25%;
+        position: sticky;
+        top: 90px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .menu-card {
+        width: 75%;
+    }
+}
+
+.menu-navigation a {
+    text-decoration: none;
+    font-family: cursive;
+    font-size: 24px;
+    color: #2b190a;
+    transition: color 0.2s ease;
+}
+
+.menu-navigation a:hover {
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+.menu-section-title {
+    font-family: cursive;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: var(--text-dark);
+}
+
+.menu-item {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.menu-item .image-wrapper img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.display-content {
+    background-color: var(--rich-brown);
+    color: var(--text-light);
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    padding: 4px 12px;
+    cursor: pointer;
+}
+
+.dropright-content {
+    background-color: var(--primary-color);
+    border-radius: 6px;
+    padding: 4px;
+    margin-left: 8px;
+}
+
+.coffee-selection-button {
+    background: none;
+    border: none;
+    padding: 2px 6px;
+    cursor: pointer;
+}
+
+.price-placeholder {
+    font-weight: bold;
+    color: var(--rich-brown);
+    font-size: 16px;
+    margin: 6px 0;
+}
